@@ -28,6 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#videos">Videos</a></li>
+                        <!-- This is where I customized the nav link, see also line 56 for the href section link-->
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
@@ -38,7 +39,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img src="assets/img/selfie.png" width=300 alt="Kate's face!" />
+                <img src="assets/img/selfie.png" width=300 alt="An image of a purple-haired person's face wearing sunglasses as a sunray beams in from above." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Kate Allen Hill</h1>
                 <!-- Icon Divider-->
@@ -65,8 +66,10 @@
                 <!-- Video Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Video Item 1-->
+                        <!--An old youtube series I was part of-->
                             <iframe width="500" height="300" src="https://www.youtube.com/embed/2NiWagsEwSI?si=HONocLNONKcQEEVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <!-- Video Item 2-->
+                        <!--Slightly more recent youtube series I was part of-->
                             <iframe width="500" height="300" src="https://www.youtube.com/embed/QFLt9XGKy54?si=khQ05MLT0YSPeHQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <!-- Portfolio Item 3-->
                     <!-- Removed this from code, might be useful later. <div class="col-md-6 col-lg-4 mb-5">
@@ -120,20 +123,15 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Kate Allen Hill is a super cool person who definitely wrote this herself. She loves dummy text:</p>
-                    <ul><li>Lorem</li>
-                    <li>Ipsum</li>
-                    <li>Dolor</li>
-                    <li>Sit</li>
-                    <li>Amet</li></ul></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Isn't that neat? Look at all the words! Lorem ipsum dolor sit amet. If you'd like to copy this theme for your own use, I left the download button right here.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Kate Allen Hill is a super cool person who definitely wrote this herself, and doesn't have an inflated ego in the slightest. Fun fact, Kate loves dummy text!</p>
+                    </div>
+                    <div class="col-lg-4 me-auto"><p class="lead">For an example of some of the classic dummy text:<ul class="fa-ul">
+                        <!--Yoinked this list and the custom icons from stackoverflow, my beloved.-->
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Lorem</li>
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Ipsum</li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>Dolor</li>
+                        <li><span class="fa-li"><i class="far fa-square"></i></span>Sit Amet</li>
+                      </ul></p></div>
                 </div>
             </div>
         </section>
@@ -141,7 +139,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Kate</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -162,26 +160,26 @@
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
+                                <label for="name">Name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
+                                <label for="email">Email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
+                                <label for="phone">Phone</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
+                                <label for="message">Your Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
@@ -202,7 +200,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -219,6 +217,7 @@
                             Outer Space
                             <br />
                             Somewhere around Saturn's Rings
+                            <!-- That's the prettiest planet, scientifically.-->
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
